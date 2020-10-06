@@ -13,7 +13,7 @@
 
 function splitter(){
 	var arr =$scope.inpt.split(',');
-	var output =document.getElementById('output');
+//	var output =document.getElementById('output');
 	var flag=0;
 	console.log(output);
 	for(let i=0;i<arr.length;++i){
@@ -22,15 +22,15 @@ function splitter(){
 		}
 	if(flag===0){
 		$scope.message="Please enter data first";
-		output.style.color="red";
+// 		output.style.color="red";
 	}
 	else if(flag<=3){
 		$scope.message="Enjoy!";
-		output.style.color="green";
+// 		output.style.color="green";
 	}
 	else{
 		$scope.message="Too much!";
-		output.style.color="green";
+// 		output.style.color="green";
 	}
 	}
 }
